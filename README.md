@@ -14,3 +14,4 @@ Web site içeriği kendi Google Drive hesabımda barındırdığım [JSON](https
 - build Github Actions tarafından yeni bir commit ve push oluşturularak işleme alınır, Vercel'de tamamlanır.
 
 
+## Auto build sayısı
