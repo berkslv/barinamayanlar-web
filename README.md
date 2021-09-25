@@ -2,6 +2,7 @@
 
 Bu repo Türkiyedeki öğrencilerin barınamama sorunlarını sosyal medyalar dışında ayrı bir websitesi üzerinden özelleşmiş tasarım ile insanlara duyurulması amacı ile tarafımca tasarlanmış ve kodlanmıştır.
 
+
 Websitesi [Jamstack](https://jamstack.org) araçlarıyla planlanmıştır. CMS olarak [Google Drive](https://drive.google.com), Site generator olarak [Next.js](https://nextjs.org) ve barındırma için ise [Vercel](https://vercel.com) kullanır. Tüm bu araçlar ücretsizdir ve site tamamen ücretsiz barındırılır. (Vercel sadece non-commercial usage için ücretsizdir. Ayrıntılı bilgi için [buraya](https://vercel.com/docs/concepts/limits/fair-use-policy) göz at.)
 
 ## İçerik nasıl güncellenir?
