@@ -1,63 +1,15 @@
-# A statically generated blog example using Next.js and Markdown
+# Barınamıyoruz Hareketi
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using Markdown files as the data source.
+Bu repo Türkiyedeki öğrencilerin barınamama sorunlarını sosyal medyalar dışında ayrı bir websitesi üzerinden özelleşmiş tasarım ile insanlara duyurulması amacı ile tarafımca tasarlanmış ve kodlanmıştır.
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+Websitesi [Jamstack](https://jamstack.org) araçlarıyla planlanmıştır. CMS olarak [Google Drive](https://drive.google.com), Site generator olarak [Next.js](https://nextjs.org) ve barındırma için ise [Vercel](https://vercel.com) kullanır. Tüm bu araçlar ücretsizdir ve site tamamen ücretsiz barındırılır. (Vercel sadece non-commercial usage için ücretsizdir. Ayrıntılı bilgi için [buraya](https://vercel.com/docs/concepts/limits/fair-use-policy) göz at.)
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## İçerik nasıl güncellenir?
 
-## Preview
+Web site içeriği kendi Google Drive hesabımda barındırdığım [JSON](https://drive.google.com/file/d/1xobYWPQvumZVa3leB8MFjKmY7A5Q0rRU/view?usp=sharing) dosyası üzerinden çekilir ve bu dosya güncellendikten sonra aşağıdaki talimatlar uygulanarak yeni bir build oluşturulur böylelikle site içeriği güncellenmiş olur. Tabiki site içeriğini güncellemek için belirttiğim JSON dosyasına write access'e sahip olmanız gerekiyor.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- 'Build request' başlığına (title) sahip içeriği boş bir issue oluşturulur.
+- issue closed state'e alınır
+- build Github Actions tarafından yeni bir commit ve push oluşturularak işleme alınır, Vercel'de tamamlanır.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter)
 
-## Demo
-
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
-
-### Related examples
-
-- [WordPress](/examples/cms-wordpress)
-- [DatoCMS](/examples/cms-datocms)
-- [Sanity](/examples/cms-sanity)
-- [TakeShape](/examples/cms-takeshape)
-- [Prismic](/examples/cms-prismic)
-- [Contentful](/examples/cms-contentful)
-- [Strapi](/examples/cms-strapi)
-- [Agility CMS](/examples/cms-agilitycms)
-- [Cosmic](/examples/cms-cosmic)
-- [ButterCMS](/examples/cms-buttercms)
-- [Storyblok](/examples/cms-storyblok)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```
-npx create-next-app --example blog-starter blog-starter-app
-
-```
-
-or
-
-```
-yarn create next-app --example blog-starter blog-starter-app
-
-```
-
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-# Notes
-
-This blog-starter uses [Tailwind CSS](https://tailwindcss.com). To control the generated stylesheet's filesize, this example uses Tailwind CSS' v2.0 [`purge` option](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to remove unused CSS.
