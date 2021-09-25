@@ -22,7 +22,7 @@ export default function Index({ content }) {
         <meta property="og:url" content="https://barinamayanlar.vercel.app" />
         <meta property="og:image" content="/favicon/banner.jpeg" />
 
-        <meta name="theme-color" content="#B70B58" />
+        <meta name="theme-color" content="#A80A51" />
       </Head>
       <Header content={content} />
       <FullImage content={content} />

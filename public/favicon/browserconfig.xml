@@ -3,7 +3,7 @@
     <msapplication>
         <tile>
             <square150x150logo src="/favicons/mstile-150x150.png"/>
-            <TileColor>#B70B58</TileColor>
+            <TileColor>#A80A51</TileColor>
         </tile>
     </msapplication>
 </browserconfig>

@@ -15,7 +15,7 @@ module.exports = {
     },
     colors: {
       ...colors,
-      prime: "#B70B58",
+      prime: "#A80A51",
     },
   },
 };
