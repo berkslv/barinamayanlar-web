@@ -19,7 +19,7 @@ export default function Column({ content, index }) {
       <div className={`md:w-1/2 w-full h-screen-2 flex ${layout ? 'flex-row':'flex-row-reverse'} justify-end items-center`}>
         <h3
           dangerouslySetInnerHTML={{ __html: content?.columns[index]?.title }}
-          className={`text-white font-semibold text-3xl w-8/12 ${layout ? 'text-right pr-3':'text-left pl-3'}`}
+          className={`text-white font-semibold md:text-3xl text-2xl xs:w-8/12 w-full ${layout ? 'text-right pr-3':'text-left pl-3'}`}
         ></h3>
         <div className="bg-white w-2 h-1/2"></div>
       </div>
