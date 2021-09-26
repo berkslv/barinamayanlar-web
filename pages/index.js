@@ -21,7 +21,11 @@ export default function Index({ content }) {
         <meta property="og:description" content={content?.meta?.desc} />
         <meta property="og:url" content="https://barinamayanlar.vercel.app" />
         <meta property="og:image" content="https://raw.githubusercontent.com/berkslv/barinamayanlar-web/main/public/favicon/logo.jpg" />
-        <meta property="twitter:image" content="https://raw.githubusercontent.com/berkslv/barinamayanlar-web/main/public/favicon/logo.jpg" />
+        
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@barinamayanlar" />
+        <meta name="twitter:title" content={content?.meta?.title} />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/berkslv/barinamayanlar-web/main/public/favicon/logo.jpg" />
 
 
         <meta name="theme-color" content="#A80A51" />
